@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 1rem;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, rgb(0, 153, 255) , rgb(255, 0, 200));
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+/* Basic styling */
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    border-bottom: 1px solid;
+    color: white;
+
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(238, 127, 210);
+}
+
+button {
+    background-color: #819eff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <label class="logo" for="logo">Fashion Mart</label>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Products.html">All products</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Men
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menDropdown">
+                            <a class="dropdown-item" href="../mens items/mensallproducts.html">All Products</a>
+                            <a class="dropdown-item" href="../mens items/pants.html">Pants</a>
+                            <a class="dropdown-item" href="../mens items/shirts.html">Shirts</a>
+                            <a class="dropdown-item" href="../mens items/hoodies.html">Hoodies</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Women
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <a class="dropdown-item" href="./womenallproducts.html">All Products</a>
+                            <a class="dropdown-item" href="./dresses.html">Dresses</a>
+                            <a class="dropdown-item" href="./wPants.html">Pants</a>
+                            <a class="dropdown-item" href="./Skirts.html">Skirts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../kidscloths.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Responsive search box for small screens -->
+                <form class="form-inline my-2 my-lg-0 d-block ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-lg-block">
+                        <a class="nav-link" href="../login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses1.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses2.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses3.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses4.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses5.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses6.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses7.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="./womens items img/dresses8.jpg" alt="Product">
+            </div>
+            <h2>Dresses(womens)</h2>
+            <p>Women Fashion </p>
+            <span class="price">$10.99</span>
+            <button>Add to Cart</button>
+        </div>
+        
+        
+
+        <!-- Repeat the product section more times -->
+    </main>
+
+    < <!-- Footer Section -->
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #5364f8"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">
+        <label class="logo" for="logo">Fashion Mart</label>
+      </h6>
+      <p>
+        Here you can use rows and columns to organize your footer
+        content. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit.
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+      <p>
+        <a href="../index.html" class="text-white">Home</a>
+      </p>
+      <p>
+        <a href="../kidscloths.html" class="text-white">kids</a>
+      </p>
+      <p>
+        <a href="../mens items/mensallproducts.html" class="text-white">Men</a>
+      </p>  
+      <p>
+        <a href="./womenallproducts.html" class="text-white">Women</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+      <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+      <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+      <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+      <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+      <!-- Facebook -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #3b5998"
+         href="#!"
+         role="button"
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <!-- Twitter -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #55acee"
+         href="#!"
+         role="button"
+         ><i class="fab fa-twitter"></i
+        ></a>
+
+      <!-- Google -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #dd4b39"
+         href="#!"
+         role="button"
+         ><i class="fab fa-google"></i
+        ></a>
+
+      <!-- Instagram -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #ac2bac"
+         href="#!"
+         role="button"
+         ><i class="fab fa-instagram"></i
+        ></a>
+
+      <!-- Linkedin -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #0082ca"
+         href="#!"
+         role="button"
+         ><i class="fab fa-linkedin-in"></i
+        ></a>
+      <!-- Github -->
+      <a
+         class="btn btn-primary btn-floating m-1"
+         style="background-color: #333333"
+         href="#!"
+         role="button"
+         ><i class="fab fa-github"></i
+        ></a>
+    </div>
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div
+   class="text-center p-3"
+   style="background-color: rgba(0, 0, 0, 0.2)"
+   >
+© 2020 Copyright:
+<a class="text-white" href="https://mdbootstrap.com/"
+   >Fashion Mart</a
+  >
+</div>
+<!-- Copyright -->
+</footer>
+
+
+
+
+  <!-- Include Bootstrap and JavaScript libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

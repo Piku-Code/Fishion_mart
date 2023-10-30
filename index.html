@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"> <!-- Create a separate CSS file for custom styles -->
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <label class="logo" for="logo">Fashion Mart</label>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.html">All products</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Men
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="menDropdown">
+                        <a class="dropdown-item" href="./mens items/mensallproducts.html">All Products</a>
+                        <a class="dropdown-item" href="./mens items/pants.html">Pants</a>
+                        <a class="dropdown-item" href="./mens items/shirts.html">Shirts</a>
+                        <a class="dropdown-item" href="./mens items/hoodies.html">Hoodies</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Women
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="womenDropdown">
+                        <a class="dropdown-item" href="./womens items/womenallproducts.html">All Products</a>
+                        <a class="dropdown-item" href="./womens items/dresses.html">Dresses</a>
+                        <a class="dropdown-item" href="./womens items/wPants.html">Pants</a>
+                        <a class="dropdown-item" href="./womens items/Skirts.html">Skirts</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./kidscloths.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Responsive search box for small screens -->
+            <form class="form-inline my-2 my-lg-0 d-block ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item  d-lg-block">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <h1>Welcome to our Online Store</h1>
+            <p>Shop the latest trends in fashion and accessories.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- 2-Column Layout for Image and Description -->
+    <section class="container">
+        <div class="row">
+            <!-- Column for Images -->
+            <div class="col-12 col-md-6">
+                <img src="./pic/hero-1.jpg" class="img-fluid" alt="Image 1">
+            </div>
+            <!-- Column for Image Title and Description -->
+            <div class="col-md-6">
+                <h2>Unique Style</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, tortor nec facilisis
+                    consectetur, justo metus rhoncus ante, eu mattis lectus nunc at massa.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Column for Image Title and Description -->
+            <!-- Column for Images -->
+            <div class=" col-md-6 order-md-2 ">
+                <img src="./pic/hero-2.jpg" class="img-fluid" alt="Image 1">
+            </div>
+            <div class="col-md-6 order-md-1 text-md-right">
+                <h2>Quality Wears</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, tortor nec facilisis
+                    consectetur, justo metus rhoncus ante, eu mattis lectus nunc at massa.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Column for Images -->
+            <div class="col-12 col-md-6">
+                <img src="./pic/hero-1.jpg" class="img-fluid" alt="Image 1">
+            </div>
+            <!-- Column for Image Title and Description -->
+            <div class="col-md-6">
+                <h2>Quality Wears</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, tortor nec facilisis
+                    consectetur, justo metus rhoncus ante, eu mattis lectus nunc at massa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Carousel Section -->
+    <section class="container">
+        <h2 class="text-center">Featured Products</h2>
+        <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4  d-none d-md-block">
+                            <div class="card">
+                                <img src="./pic/products/product-6.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">Description of Product 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./pic/products/product-2.jpg" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 2</h5>
+                                    <p class="card-text">Description of Product 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="./pic/products/product-3.jpg" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 3</h5>
+                                    <p class="card-text">Description of Product 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4  d-none d-md-block">
+                            <div class="card">
+                                <img src="./pic/products/product-4.jpg" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 4</h5>
+                                    <p class="card-text">Description of Product 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="card">
+                                <img src="./pic/products/product-5.jpg" class="card-img-top" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 5</h5>
+                                    <p class="card-text">Description of Product 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-none d-md-block">
+                            <div class="card">
+                                <img src="./pic/products/product-1.jpg" class="card-img-top" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 6</h5>
+                                    <p class="card-text">Description of Product 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#featureCarousel" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#featureCarousel" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #5364f8">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            <label class="logo" for="logo">Fashion Mart</label>
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a href="home.html" class="text-white">Home</a>
+                        </p>
+                        <p>
+                            <a href="kids items/kidscloths.html" class="text-white">kids</a>
+                        </p>
+                        <p>
+                            <a href="mens items/mensallproducts.html" class="text-white">Men</a>
+                        </p>
+                        <p>
+                            <a href="womens items/womenallproducts.html" class="text-white">Women</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                            role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                            role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                            role="button"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                            role="button"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                            role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+                            role="button"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Fashion Mart</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+    <!-- Include Bootstrap and JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.banner {
+    background: linear-gradient(to right, #00aeff, #ee0979);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Style for the heading */
+.banner h1 {
+    font-size: 36px;
+}
+
+/* Style for the description */
+.banner p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.logo{
+    font-size: 1rem;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, rgb(0, 153, 255) , rgb(255, 0, 200));
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.container{
+    margin-top: 3rem;
+    
+}
+
+.row{
+    margin-top: 3rem;
+}
+
+.center-from-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+ /* Custom styles for the footer */
+ .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* Style for the copyright text */
+.copyright {
+    font-size: 14px;
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Unique design for the footer body */
+.footer-body {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#card-products {
+    width: 3rem;
+    height: 2rem;
+    overflow: hidden;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item .col-md-4 {
+        width: 100%;
+    }
+}
